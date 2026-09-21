@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia Prime Gym - Planos, horários e modalidades de treino.">
+    <title>Academia Prime Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><span class="logo-icon">🔥</span> Gym<span class="logo-accent">Prime</span></div>
+            <ul id="menu-lista">
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#planos">Planos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="#contato" class="btn-nav">Matricule-se</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Principal (Hero) -->
+        <section class="hero">
+            <canvas class="hero-canvas" id="hero-canvas"></canvas>
+            <div class="hero-conteudo">
+                <h1 class="hero-titulo">Treine com Força, Viva com Poder</h1>
+                <p>Prime Gym 💪: Sua academia conceito com estrutura premium e equipamentos de última geração. Supere seus limites com Musculação, Funcional, Spinning e Lutas, contando com o suporte dos melhores profissionais. O seu corpo alcança o que a sua mente acredita. Não espere a segunda-feira nem o momento perfeito: a sua transformação começa agora. Matricule-se já e desperte a sua melhor versão!</p>
+                <button class="btn-principal">Matricule-se Já</button>
+            </div>
+        </section>
+
+        <!-- Seção Modalidades -->
+        <section id="modalidades" class="reveal">
+            <h2>Nossas Modalidades</h2>
+            <p class="modalidades-intro">Do treino de força aos golpes marciais, temos a modalidade certa pra você suar a camisa.</p>
+            <div class="grid-modalidades">
+                <article class="card reveal-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Treino de musculação" loading="lazy">
+                        <span class="card-badge">Mais procurada</span>
+                        <div class="card-overlay">
+                            <h3>🏋️‍♂️ Musculação</h3>
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <p>Equipamentos de última geração para hipertrofia e força.</p>
+                        <span class="card-horario">⏰ Seg a Sáb · 6h–22h</span>
+                        <a href="#contato" class="card-link">Saiba mais →</a>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=600&q=80" alt="Treino funcional em grupo" loading="lazy">
+                        <span class="card-badge">Em grupo</span>
+                        <div class="card-overlay">
+                            <h3>🤸 Funcional</h3>
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <p>Treinos dinâmicos que trabalham força, agilidade e resistência.</p>
+                        <span class="card-horario">⏰ Ter e Qui · 7h / 19h</span>
+                        <a href="#contato" class="card-link">Saiba mais →</a>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=600&q=80" alt="Aula de spinning" loading="lazy">
+                        <span class="card-badge">Cardio</span>
+                        <div class="card-overlay">
+                            <h3>🚴‍♂️ Spinning</h3>
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <p>Queima calórica intensa com ritmos energizantes.</p>
+                        <span class="card-horario">⏰ Seg, Qua, Sex · 18h</span>
+                        <a href="#contato" class="card-link">Saiba mais →</a>
+                    </div>
+                </article>
+                <article class="card reveal-card">
+                    <div class="card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=600&q=80" alt="Treino de lutas" loading="lazy">
+                        <span class="card-badge">Defesa pessoal</span>
+                        <div class="card-overlay">
+                            <h3>🥋 Lutas</h3>
+                        </div>
+                    </div>
+                    <div class="card-corpo">
+                        <p>Defesa pessoal e disciplina com professores especializados.</p>
+                        <span class="card-horario">⏰ Ter e Qui · 20h</span>
+                        <a href="#contato" class="card-link">Saiba mais →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Planos -->
+        <section id="planos" class="reveal">
+            <h2>Nossos Planos</h2>
+            <div class="grid-planos">
+                <article class="plano-card reveal-card">
+                    <h3>Mensal</h3>
+                    <p class="preco">R$ 95,90</p>
+                    <p>Acesso à musculação e aulas básicas.</p>
+                    <button class="btn-plano">Assinar</button>
+                </article>
+                <article class="plano-card plano-destaque reveal-card">
+                    <span class="tag-destaque">Mais popular</span>
+                    <h3>Trimestral</h3>
+                    <p class="preco">R$ 239,90</p>
+                    <p>Todas as modalidades + avaliação física.</p>
+                    <button class="btn-plano">Assinar</button>
+                </article>
+                <article class="plano-card reveal-card">
+                    <h3>Anual</h3>
+                    <p class="preco">R$ 880,90</p>
+                    <p>Acesso total + nutricionista incluso.</p>
+                    <button class="btn-plano">Assinar</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="reveal">
+            <h2>Fale Conosco</h2>
+            <p class="contato-intro">Tem dúvidas sobre planos, horários ou modalidades? Preencha o formulário ou fale direto com a nossa equipe — respondemos rapidinho!</p>
+            <div class="contato-grid">
+                <form id="form-contato" class="contato-form">
+                    <div class="campo-linha">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="seu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="campo-linha">
+                        <div class="campo">
+                            <label for="telefone">Telefone / WhatsApp</label>
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="campo">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto">
+                                <option value="matricula">Quero me matricular</option>
+                                <option value="planos">Dúvida sobre planos</option>
+                                <option value="modalidades">Dúvida sobre modalidades</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="4" placeholder="Conte um pouco sobre o que você precisa..."></textarea>
+                    </div>
+                    <button type="submit">Enviar mensagem</button>
+                    <p class="form-feedback" id="form-feedback"></p>
+                </form>
+
+                <aside class="contato-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. das Nações, 1200 — Centro<br>São Paulo, SP</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕒</span>
+                        <div>
+                            <h4>Horário de funcionamento</h4>
+                            <p>Seg a Sex: 6h – 22h<br>Sáb: 8h – 14h</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Telefone / WhatsApp</h4>
+                            <p>(11) 91234-5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@ironpower.com.br</p>
+                        </div>
+                    </div>
+                    <div class="redes-sociais">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Academia Prime Gym. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
